@@ -1,0 +1,148 @@
+body{
+  font-family: sans-serif;
+}
+.top {
+  background-color: #fff;
+  display: flex;
+  height: 45px;
+  margin:-5px;
+}
+.top .menuicon{
+  font-size: 2rem;
+  visibility: hidden;
+}
+.top .menuicon:hover{
+  background-color: #CCCCCC;
+}
+.top .menuicon i{
+  color: #DDE1E4;
+}
+.top .logo{
+  height: 2em;
+  margin:5px;
+  margin-left: 20px;
+}
+.bell-icon i{
+  color: #DDE1E4;
+  margin:8px -5px;
+  position: absolute;
+  right: ;
+  top: 5px;
+  position: absolute;
+  right: 65px;
+  top:8px;
+}
+.top .avatar img{
+  float: right;
+  margin:0px;
+  width: 40px;
+  height: 40px;
+  margin-left:20px;
+  shape-outside:url("./1596764613099.png");
+  clip-path: circle();
+  position: absolute;
+  right: 0%;
+  top: 5px;
+  right: 10px;
+}
+
+
+
+.menulist{
+  display: flex;
+  padding: 1px;
+  margin-top: -10px;
+}
+
+.menulist li{
+  padding:0px 5px;
+  display: block;
+  transition: all 0.5s;
+  margin-right :10px;
+  border-bottom: 1px solid #red;
+}
+
+.menulist a{
+   color: #7a8894;
+   text-decoration: none;
+
+}
+.menulist .item:active{
+  color: #007be8;
+}
+.menulist a:visited{
+   color: #7a8894;
+}
+.menulist a:hover{
+   color: #007be8;
+   text-decoration: none;
+   border-bottom: 5px solid #BE1413;
+}
+
+
+@media (max-width: 600px) {
+  .top .menuicon a i{
+   visibility: visible;
+
+  }
+  .menulist{
+    display:none;
+  }
+}
+@media(min-width: 600px){
+  .top .logo{
+    margin-left:-20px;
+  }
+}
+
+
+
+body{
+   background-color: #F6F9FA;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.item{
+  background: #fff;
+  flex-grow:1;
+  margin-top: 10px;
+  display: flex;
+  flex-direction:column;
+  margin:5px;
+  margin-top: 20px;
+}
+@media (min-width: 600px) {
+  .container{
+    flex-direction:row;
+  }
+}
+.subitem{
+  background: #fff;
+  border: 0px solid #000;
+  flex-grow:1;
+  display: flex;
+  align-items: center;
+  margin:5px;
+}
+.subitem .number{
+  font-size: 25px;
+  color: #514c4c;
+}
+
+.avatar-user{
+  shape-outside:url("./1596764613099.png");
+  clip-path: circle();
+  margin: 5px;
+  height: 40px;
+  margin-left: 20px;
+}
+.subitem .user{
+  padding: 0 10px;
+  color: #514c4c;
+  flex-grow: 1;
+}
+.subitem .number-rank{
+  color: #514c4c;
+}
