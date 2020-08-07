@@ -28,7 +28,7 @@ body{
   top: 5px;
   position: absolute;
   right: 65px;
-  top:5px;
+  top:8px;
 }
 .top .avatar img{
   float: right;
@@ -45,33 +45,37 @@ body{
 }
 
 
+
 .menulist{
   display: flex;
-  padding: 0px;
-  list-style: none;
+  padding: 1px;
 }
-a:link{
-  text-decoration: none;
-  color: #7a8894;
-  border-bottom: 1px solid #red;
-}
+
 .menulist li{
-  padding:0px 16px;
-  box-sizing: border-box;
+  padding:0px 5px;
   display: block;
-  transition: all;
-}
-a:hover{
-  color: #007be8;
+  transition: all 0.5s;
+  margin-right :10px;
   border-bottom: 1px solid #red;
 }
-a:visited{
-  text-decoration: none;
-  color: #7a8894;
+
+.menulist a{
+   color: #7a8894;
+   text-decoration: none;
+
 }
 .menulist .item:active{
   color: #007be8;
 }
+.menulist a:visited{
+   color: #7a8894;
+}
+.menulist a:hover{
+   color: #007be8;
+   text-decoration: none;
+   border-bottom: 5px solid #BE1413;
+}
+
 
 @media (max-width: 600px) {
   .top .menuicon a i{
