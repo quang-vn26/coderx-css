@@ -1,0 +1,93 @@
+body{
+  font-family: sans-serif;
+}
+.top {
+  background-color: #fff;
+  display: flex;
+}
+.top .menuicon{
+  font-size: 2rem;
+  visibility: hidden;
+}
+.top .menuicon:hover{
+  background-color: #CCCCCC;
+}
+.top .menuicon i{
+  color: #DDE1E4;
+}
+.top .logo{
+  height: 2em;
+  margin:5px;
+  margin-left: 20px;
+}
+.bell-icon i{
+  color: #DDE1E4;
+  margin:8px -5px;
+  position: absolute;
+  right: ;
+  top: 5px;
+  position: absolute;
+  right: 65px;
+  top:8px;
+}
+.top .avatar img{
+  float: right;
+  margin:0px;
+  width: 40px;
+  height: 40px;
+  margin-left:20px;
+  shape-outside:url("./1596764613099.png");
+  clip-path: circle();
+  position: absolute;
+  right: 0%;
+  top: 5px;
+  right: 10px;
+}
+
+
+
+.menulist{
+  display: flex;
+  padding: 1px;
+}
+
+.menulist li{
+  padding:0px 5px;
+  display: block;
+  transition: all 0.5s;
+  margin-right :10px;
+  border-bottom: 1px solid #red;
+}
+
+.menulist a{
+   color: #7a8894;
+   text-decoration: none;
+
+}
+.menulist .item:active{
+  color: #007be8;
+}
+.menulist a:visited{
+   color: #7a8894;
+}
+.menulist a:hover{
+   color: #007be8;
+   text-decoration: none;
+   border-bottom: 5px solid #BE1413;
+}
+
+
+@media (max-width: 600px) {
+  .top .menuicon a i{
+   visibility: visible;
+
+  }
+  .menulist{
+    display:none;
+  }
+}
+@media(min-width: 600px){
+  .top .logo{
+    margin-left:-20px;
+  }
+}

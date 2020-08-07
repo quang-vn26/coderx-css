@@ -1,0 +1,48 @@
+body{
+   background-color: #F6F9FA;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.item{
+  background: #fff;
+  flex-grow:1;
+  margin-top: 10px;
+  display: flex;
+  flex-direction:column;
+  margin:5px;
+}
+@media (min-width: 600px) {
+  .container{
+    flex-direction:row;
+  }
+}
+.subitem{
+  background: #fff;
+  border: 0px solid #000;
+  flex-grow:1;
+  display: flex;
+  align-items: center;
+  margin:5px;
+}
+.subitem .number{
+  font-size: 25px;
+  color: #514c4c;
+}
+
+.avatar-user{
+  shape-outside:url("./1596764613099.png");
+  clip-path: circle();
+  margin: 5px;
+  height: 40px;
+  margin-left: 20px;
+}
+.subitem .user{
+  padding: 0 10px;
+  color: #514c4c;
+  flex-grow: 1;
+}
+.subitem .number-rank{
+  color: #514c4c;
+}
